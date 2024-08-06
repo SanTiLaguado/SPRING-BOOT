@@ -9,5 +9,13 @@
     <H1>USER DETAILS</H1>
     <h2 th:text="${user.nombre}"></h2>
     <h2 th:text="${user.apellido}"></h2>
+    <h2 th:if="${user.email}" th:text="${user.email}"></h2>
+    <h2 th:if="${user.email == null}" th:text="${'el usuario no tiene email'}"></h2>
+
+    <h2 th:text="${user2.title}"></h2>
+    <h2 th:text="${user2.user.nombre}"></h2>
+    <h2 th:if="${user2.user.email}" th:text="${user2.user.email}"></h2>
+    <h2 th:if="${user2.user.email == null}" th:text="${'el usuario no tiene email'}"></h2>
+
 </body>
 </html>
